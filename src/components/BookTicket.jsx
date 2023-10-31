@@ -35,9 +35,9 @@ const BookTicket = () => {
         <div className="h-[650px] w-[600px]  my-[50px] rounded-lg flex flex-col justify-center items-center bg-[#333]">
           {message && (
             <h1
-              className={`text-2xl p-4 my-2 rounded-md bg-${
-                message === 'Success' ? 'green' : 'red'
-              }-400 text-white`}
+              className={`text-2xl p-4 my-2 rounded-md ${
+                message === 'Success' ? 'bg-green-400' : 'bg-red-400'
+              } text-white`}
             >
               {message === 'Success'
                 ? 'Your ticket has been booked'
